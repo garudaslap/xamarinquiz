@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="XamarinFestQuiz.ThanksForPlaying"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="lblUsername"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   Text="Tu puntaje es" />
+            <Label HorizontalTextAlignment="Center" Text="Tu puntaje es" />
+            <Label x:Name="lblScore"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   Text="1000" />
+            <Label HorizontalTextAlignment="Center" Text="Gracias por participar !!" />
+
+            <Label HorizontalTextAlignment="Center"
+                   Text="@garudaslap"
+                   TextColor="Aqua" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

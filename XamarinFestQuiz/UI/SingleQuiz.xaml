@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="XamarinFestQuiz.SingleQuiz"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:XamarinFestQuiz;assembly=XamarinFestQuiz">
+    <ContentPage.BindingContext>
+        <models:QuestionViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout x:Name="slQuestion" IsVisible="false">
+                <Label x:Name="lblQuestion"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="{Binding Question}" />
+                <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" />
+                <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" />
+                <Button x:Name="btnAnswerThree" Text="{Binding Answer3}" />
+                <Label x:Name="lblMessage"
+                       FontAttributes="Italic"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       Text="{Binding Message}" />
+            </StackLayout>
+
+            <ActivityIndicator x:Name="aiLoading"
+                               IsRunning="{Binding IsLoading}"
+                               IsVisible="{Binding IsLoading}"
+                               Color="Blue" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
