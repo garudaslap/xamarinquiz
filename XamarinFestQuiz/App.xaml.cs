@@ -5,7 +5,7 @@ namespace XamarinFestQuiz
 {
     public class AppSettings
     {
-        public const int QUESTIONS_COUNT = 5;
+        public const int QUESTIONS_COUNT = 1;
         public static int CurrentQuestion = 1;
         public static int Score = 0;
         public static string Username = "";
@@ -17,7 +17,7 @@ namespace XamarinFestQuiz
             get
             {
                 if (_mobileServiceClient == null)
-                    _mobileServiceClient = new MobileServiceClient("https://xamarinquiz.azurewebsites.net");
+                    _mobileServiceClient = new MobileServiceClient("https://xamarinfestquiz.azurewebsites.net");
                 return _mobileServiceClient;
             }
         }
@@ -28,7 +28,20 @@ namespace XamarinFestQuiz
         public App()
         {
             InitializeComponent();
+            /*
+            XamarinQuiz item = new XamarinQuiz()
+            {
+                Question = "La sigla PCL se refiere a...",
+                Answer1 = "Portable Class Library",
+                Answer2 = "Power Class Library",
+                Answer3 = "Portable Code Library",
+                CorrectAnswer = 1
+            };
 
+            IMobileServiceTable<XamarinQuiz> xamarinQuizTable = AppSettings.MobileService.GetTable<XamarinQuiz>();
+
+            xamarinQuizTable.InsertAsync(item);
+            */
             MainPage = new UserSignUp();
         }
 

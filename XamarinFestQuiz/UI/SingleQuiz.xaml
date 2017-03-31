@@ -9,7 +9,7 @@
 
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <StackLayout x:Name="slQuestion" IsVisible="false">
+            <StackLayout x:Name="slQuestion" IsVisible="true">
                 <Label x:Name="lblQuestion"
                        FontAttributes="Bold"
                        FontSize="Large"
