@@ -20,7 +20,6 @@ namespace XamarinFestQuiz
                 if (((QuestionViewModel)BindingContext).CheckIfCorrect(1)) DoAnswer();
                 else
                 {
-                    ((Button)sender).IsEnabled = false;
                     score = score / 2;
                 }
             };
@@ -30,7 +29,6 @@ namespace XamarinFestQuiz
                 if (((QuestionViewModel)BindingContext).CheckIfCorrect(2)) DoAnswer();
                 else
                 {
-                    ((Button)sender).IsEnabled = false;
                     score = score / 2;
                 }
             };
@@ -43,7 +41,6 @@ namespace XamarinFestQuiz
                 }
                 else
                 {
-                    ((Button)sender).IsEnabled = false;
                     score = score / 2;
                 }
             };

@@ -15,9 +15,12 @@
                        FontSize="Large"
                        HorizontalTextAlignment="Center"
                        Text="{Binding Question}" />
-                <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" />
-                <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" />
-                <Button x:Name="btnAnswerThree" Text="{Binding Answer3}" />
+                <Button x:Name="btnAnswerOne" Text="{Binding Answer1}" 
+				    IsEnabled="{Binding Answer1Enabled}" />
+                <Button x:Name="btnAnswerTwo" Text="{Binding Answer2}" 
+				    IsEnabled="{Binding Answer2Enabled}" />
+                <Button x:Name="btnAnswerThree" Text="{Binding Answer3}" 
+				    IsEnabled="{Binding Answer3Enabled}" />
                 <Label x:Name="lblMessage"
                        FontAttributes="Italic"
                        FontSize="Large"

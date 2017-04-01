@@ -5,7 +5,7 @@ namespace XamarinFestQuiz
 {
     public class AppSettings
     {
-        public const int QUESTIONS_COUNT = 1;
+        public const int QUESTIONS_COUNT = 3;
         public static int CurrentQuestion = 1;
         public static int Score = 0;
         public static string Username = "";
